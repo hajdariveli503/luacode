@@ -5,7 +5,6 @@ playery = 300
 screenwidth = love.graphics.getWidth()
 screenheight = love.graphics.getHeight()
 
-```
 -- Load 2 animation frame
 playerframes = {
 	love.graphics.newImage("shade.png"),

@@ -32,7 +32,6 @@ camY = 0
 weaponimage = love.graphics.newImage("woodsword.png")
 weaponwidth = weaponimage:getWidth()
 weaponheight = weaponimage:getHeight()
-```
 
 end
 
@@ -40,7 +39,6 @@ function love.draw()
 – Draw the background
 local currenttile = grasstile – default
 
-```
 if currentmap == "forest" then
 	currenttile = foresttile
 end
@@ -54,14 +52,13 @@ end
 love.graphics.draw(playerframes[currentframe], playerx, playery, 0, 2, 2)
 love.graphics.draw(weaponimage, weaponx, weapony, 0, 1.5, 1.5)
 love.graphics.print("FPS: " .. tostring(love.timer.getFPS()), 10, 10)
-```
 
 end
 
 function love.update(dt)
 local ismoving = false
 
-```
+
 -- Movement
 if love.keyboard.isDown("right") then
 	playerx = playerx + 350 * dt
@@ -129,7 +126,6 @@ end
 if playery > screenheight - playerheight then
 	playery = screenheight - playerheight
 end
-```
 
 end
 
